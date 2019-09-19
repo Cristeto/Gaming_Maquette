@@ -1,0 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.tblg {
+text-align: center;
+}
+
+.tbld {
+  text-align: center;
+  font-size: 1.5rem;
+  word-spacing: 1.2rem;
+  font-variant: small-caps;
+}
+
+#premier {
+color: #b7b7b7;
+font-weight: bold;
+}
+
+#second {
+  color: #3a6ee8;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.65rem;
+}
