@@ -1,96 +1,101 @@
-html {
-  scroll-behavior: smooth;
-}
-
-.tblg {
-text-align: center;
-}
-
-.tbld {
-  text-align: center;
-  font-size: 1.5rem;
-  word-spacing: 1.2rem;
-  font-variant: small-caps;
-}
-
-#premier {
-color: #b7b7b7;
-font-weight: bold;
-}
-
-#second {
-  color: #3a6ee8;
-  font-weight: bold;
-}
-h3 {
-  font-size: 1.5rem;
-  letter-spacing: 0.65rem;
-}
-
-.bouton {
-  word-spacing: 1.7rem;
-  color: #b7b7b7;
-}
-
-.bouton:hover {
-color:#3a6ee8;
-transition: 1s all;
-  transition-property: all;
-  transition-duration: 1.5s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-
-}
-
 body, html {
   height: 100%;
 }
 
-* {
-  box-sizing: border-box;
-}
 
-.bg-image {
+
+.parallax1 {
   /* The image used */
-  background-image: url("https://images3.alphacoders.com/985/985201.jpg");
-
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  background-image: url('img/fond_img.jpg');
 
   /* Full height */
   height: 100%;
 
-  /* Center and scale the image nicely */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color:
 }
 
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
 
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+ background-color: transparent;
+ width: 605px;
+ height: 305px;
+ border: 1px solid #f1f1f1;
+ perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ text-align: center;
+ transition: transform 0.8s;
+ transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+ transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+ background-color: #;
+ color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+ background-image: url(img/alan_wake.jpg);
+ color: white;
+ transform: rotateY(180deg);
+ color: black;
+ text-align: left;
+ background-position: center;
+ background-size: cover;
+ font-family: fantasy;
+}
+
+
+/* Style all font awesome icons */
+.fa {
   padding: 20px;
+  font-size: 30px;
+  width: 50px;
   text-align: center;
+  text-decoration: none;
 }
 
-.frst {
-  color: #b7b7b7;
-  word-spacing: 1.2rem;
-  font-size: 3rem;
-  font-weight: bold;
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
 }
-.scnd {
-  font-size: 1.3rem;
-letter-spacing: 1.9rem;
+
+.parallax2 {
+  /* The image used */
+  background-image: url('img/TM.png');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:
 }
