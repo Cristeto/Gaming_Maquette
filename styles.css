@@ -60,14 +60,15 @@ body, html {
 
 /* Style the back side */
 .flip-card-back {
- background-image: url(img/alan_wake.jpg);
+background-color: white;
  color: white;
  transform: rotateY(180deg);
  color: black;
  text-align: left;
  background-position: center;
  background-size: cover;
- font-family: fantasy;
+font-family: fantasy;
+
 }
 
 
@@ -98,4 +99,10 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   background-color:
+}
+
+.texte_presentation {
+text-align: center;
+padding-top: 40px;
+font-size: 1.8rem;
 }
